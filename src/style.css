@@ -1,9 +1,16 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-
+body {
+  background-color: green;
+}
 .container {
   width: 20rem;
   flex-direction: column;
   height: 30rem;
+  display: flex;
+  background-color: white;
+  margin-top: 100px;
+}
+.suite {
   display: flex;
 }
 #top {
@@ -11,9 +18,13 @@
 }
 #bottom {
   justify-content: end;
+  align-items: end;
+  height: 10rem;
 }
 #middle {
   justify-content: center;
   height: 20rem;
   align-items: center;
+  display: flex;
+  font-size: 80px;
 }

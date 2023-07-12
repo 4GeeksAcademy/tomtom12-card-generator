@@ -7,7 +7,7 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+
   let suite = ["spade", "heart", "club", "diamond"];
   let number = [
     "A",
@@ -20,9 +20,9 @@ window.onload = function() {
     "8",
     "9",
     "10",
-    "11",
-    "12",
-    "13"
+    "J",
+    "Q",
+    "K"
   ];
 
   let generator = () => {
@@ -31,6 +31,9 @@ window.onload = function() {
   let benerator = () => {
     return number[Math.floor(Math.random() * number.length)];
   };
-  document.getElementsByClassName("suite").innerHTML = generator();
+  let suites = document.getElementsByClassName("suite");
+  for (let i = 0; i < suites.length; i++) {
+    suites[i].innerHTML = generator();
+  }
   document.getElementById("middle").innerHTML = benerator();
 };
