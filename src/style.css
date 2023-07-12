@@ -1,1 +1,19 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.container {
+  width: 20rem;
+  flex-direction: column;
+  height: 30rem;
+  display: flex;
+}
+#top {
+  justify-content: start;
+}
+#bottom {
+  justify-content: end;
+}
+#middle {
+  justify-content: center;
+  height: 20rem;
+  align-items: center;
+}
